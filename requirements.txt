@@ -3,3 +3,10 @@ djangorestframework==3.12.4
 djoser==2.1.0
 webcolors==1.11.1
 Pillow==9.0.0
+#code linters
+flake8==3.9.2
+flake8-docstrings==1.6.0
+flake8-broken-line
+flake8-return
+flake8-isort
+pep8-naming
