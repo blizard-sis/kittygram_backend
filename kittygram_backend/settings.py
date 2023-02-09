@@ -20,6 +20,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'djoser',
     'cats.apps.CatsConfig',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
@@ -110,3 +111,13 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 10,
 
 }
+
+SWAGGER_SETTINGS = {
+   'SECURITY_DEFINITIONS': {
+      'Bearer': {
+            'type': 'apiKey',
+            'name': 'Authorization',
+            'in': 'header'
+      }
+   }
+} 
